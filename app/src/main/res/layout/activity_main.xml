@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:text="Demo Fragment"
+        android:textColor="#DD00"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFragment1"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="#15cc31"
+            android:text="Fragment1" />
+
+        <Button
+            android:id="@+id/btnFragment2"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25dp"
+            android:background="#DD00"
+            android:text="Fragment2" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fmContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutButton"
+        android:layout_marginTop="15dp"></FrameLayout>
+
+</RelativeLayout>
